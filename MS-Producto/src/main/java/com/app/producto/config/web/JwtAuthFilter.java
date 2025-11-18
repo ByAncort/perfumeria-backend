@@ -1,5 +1,6 @@
-package com.app.producto.Config;
+package com.app.producto.config.web;
 
+import com.app.producto.shared.client.AuthClientService;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

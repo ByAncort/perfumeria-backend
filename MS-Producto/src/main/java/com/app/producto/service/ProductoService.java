@@ -1,13 +1,13 @@
-package com.app.producto.Service;
+package com.app.producto.service;
 
-import com.app.producto.Dto.ProductoDto;
-import com.app.producto.Dto.ProveedorResponse;
-import com.app.producto.Models.Categoria;
-import com.app.producto.Models.Producto;
-import com.app.producto.Repository.CategoriaRepository;
-import com.app.producto.Repository.ProductoRepository;
-import com.app.producto.shared.MicroserviceClient;
-import com.app.producto.shared.TokenContext;
+import com.app.producto.dto.ProductoDto;
+import com.app.producto.dto.ProveedorResponse;
+import com.app.producto.domain.model.Categoria;
+import com.app.producto.domain.model.Producto;
+import com.app.producto.repository.CategoriaRepository;
+import com.app.producto.repository.ProductoRepository;
+import com.app.producto.shared.client.MicroserviceClient;
+import com.app.producto.shared.security.TokenContext;
 import lombok.RequiredArgsConstructor;
 import org.app.dto.ServiceResult;
 import org.springframework.beans.factory.annotation.Value;

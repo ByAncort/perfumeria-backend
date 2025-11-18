@@ -1,4 +1,4 @@
-package com.app.producto.Dto;
+package com.app.producto.dto;
 
 import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;

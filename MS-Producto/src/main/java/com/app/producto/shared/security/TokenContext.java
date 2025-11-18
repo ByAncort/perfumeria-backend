@@ -1,4 +1,4 @@
-package com.app.producto.shared;
+package com.app.producto.shared.security;
 
 public class TokenContext {
     private static final ThreadLocal<String> currentToken = new ThreadLocal<>();

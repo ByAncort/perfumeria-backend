@@ -1,4 +1,4 @@
-package com.app.producto.shared;
+package com.app.producto.shared.client;
 
 import org.springframework.http.*;
 import org.springframework.stereotype.Service;

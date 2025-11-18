@@ -1,4 +1,4 @@
-package com.app.producto.Models;
+package com.app.producto.domain.model;
 
 import jakarta.persistence.*;
 import lombok.*;

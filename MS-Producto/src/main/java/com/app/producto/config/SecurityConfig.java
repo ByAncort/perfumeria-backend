@@ -1,5 +1,6 @@
-package com.app.producto.Config;
+package com.app.producto.config;
 
+import com.app.producto.config.web.JwtAuthFilter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;

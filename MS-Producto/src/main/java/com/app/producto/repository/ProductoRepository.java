@@ -1,6 +1,6 @@
-package com.app.producto.Repository;
+package com.app.producto.repository;
 
-import com.app.producto.Models.Producto;
+import com.app.producto.domain.model.Producto;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

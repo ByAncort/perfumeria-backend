@@ -1,6 +1,6 @@
-package com.app.producto.Config;
+package com.app.producto.shared.client;
 
-import com.app.producto.Config.Dto.TokenResponse;
+import com.app.producto.shared.security.TokenResponse;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

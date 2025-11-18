@@ -1,9 +1,9 @@
-package com.app.producto.Service;
+package com.app.producto.service;
 
 
-import com.app.producto.Dto.*;
-import com.app.producto.Models.Categoria;
-import com.app.producto.Repository.CategoriaRepository;
+import com.app.producto.dto.*;
+import com.app.producto.domain.model.Categoria;
+import com.app.producto.repository.CategoriaRepository;
 import lombok.RequiredArgsConstructor;
 import org.app.dto.ServiceResult;
 import org.springframework.stereotype.Service;

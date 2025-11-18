@@ -1,8 +1,8 @@
 package com.app.producto;
-import com.app.producto.Dto.CategoriaDto;
-import com.app.producto.Models.Categoria;
-import com.app.producto.Repository.CategoriaRepository;
-import com.app.producto.Service.CategoriaService;
+import com.app.producto.dto.CategoriaDto;
+import com.app.producto.domain.model.Categoria;
+import com.app.producto.repository.CategoriaRepository;
+import com.app.producto.service.CategoriaService;
 import org.app.dto.ServiceResult;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -11,8 +11,6 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
-import java.util.Arrays;
-import java.util.List;
 import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;

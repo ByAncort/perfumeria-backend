@@ -1,4 +1,4 @@
-package com.app.producto.Config.Dto;
+package com.app.producto.shared.security;
 
 import lombok.*;
 

@@ -1,4 +1,4 @@
-package com.app.producto.shared;
+package com.app.producto.shared.security;
 
 
 import jakarta.servlet.*;

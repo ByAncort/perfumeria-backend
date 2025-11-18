@@ -1,7 +1,7 @@
-package com.app.producto.Controller;
+package com.app.producto.controller;
 
-import com.app.producto.Dto.ProductoDto;
-import com.app.producto.Service.ProductoService;
+import com.app.producto.dto.ProductoDto;
+import com.app.producto.service.ProductoService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.media.Content;
