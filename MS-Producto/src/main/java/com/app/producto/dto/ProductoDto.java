@@ -17,6 +17,8 @@ public class ProductoDto {
     private Long id;
     private String codigoSku;
     private String nombre;
+    private String imagePrimary;
+    private String imageSecondary;
     private String descripcion;
     private BigDecimal precio;
     private BigDecimal costo;

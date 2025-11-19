@@ -27,6 +27,9 @@ public class Producto {
     @Column(nullable = false, length = 100)
     private String nombre;
 
+    private String imagePrimary;
+    private String imageSecondary;
+
     private String descripcion;
 
     @Column(nullable = false, precision = 10, scale = 2)

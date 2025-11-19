@@ -193,6 +193,8 @@ public class ProductoService {
                 .id(dto.getId())
                 .codigoSku(dto.getCodigoSku())
                 .nombre(dto.getNombre())
+                .imagePrimary(dto.getImagePrimary())
+                .imageSecondary(dto.getImageSecondary())
                 .descripcion(dto.getDescripcion())
                 .precio(dto.getPrecio())
                 .costo(dto.getCosto())

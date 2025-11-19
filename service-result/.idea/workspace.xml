@@ -5,20 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9924159c-bda5-4361-a9ea-a1984bb5e105" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/dto/AtributosProducto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/shared/util/JsonAttributeHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MS-Authenticacion/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MS-Authenticacion/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../MS-Authenticacion/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/controller/CategoriaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/controller/CategoriaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/controller/ProductoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/controller/ProductoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/domain/model/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/domain/model/Producto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/domain/service/ProductoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/domain/service/ProductoService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/dto/ProductoDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/dto/ProductoDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/service/CategoriaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/domain/service/CategoriaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/service/ProductoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/domain/service/ProductoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MS-Producto/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../MS-Producto/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MS-Producto/src/test/java/com/app/producto/CategoriaServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MS-Producto/src/test/java/com/app/producto/CategoriaServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MS-Producto/src/test/java/com/app/producto/ProductoServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MS-Producto/src/test/java/com/app/producto/ProductoServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MS-Proveedores/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../MS-Proveedores/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,6 +50,7 @@
     "Maven.service-result [clean,install].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
@@ -104,7 +94,7 @@
       <workItem from="1750636593491" duration="2689000" />
       <workItem from="1763434700498" duration="743000" />
       <workItem from="1763435671005" duration="598000" />
-      <workItem from="1763557459031" duration="683000" />
+      <workItem from="1763557459031" duration="1713000" />
     </task>
     <servers />
   </component>
