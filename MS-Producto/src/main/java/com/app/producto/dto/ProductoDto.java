@@ -6,6 +6,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
+import java.util.List;
+import java.util.Map;
 
 @Data
 @Builder
@@ -23,4 +25,12 @@ public class ProductoDto {
     private String catalogo;
     private String serial;
     private Long proveedorId;
+
+    private String tipo;
+    private List<String> tallas;
+    private List<String> colores;
+    private String material;
+    private String marca;
+    private String temporada;
+    private Map<String, String> especificaciones;
 }

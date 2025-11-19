@@ -3,6 +3,8 @@ package com.app.producto.domain.model;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Min;
 import lombok.*;
+import org.hibernate.annotations.JdbcTypeCode;
+import org.hibernate.type.SqlTypes;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -53,4 +55,8 @@ public class Producto {
 
     @Transient // Indica que no es persistente en BD
     private Long proveedoresId;
+
+    @Column(columnDefinition = "json")
+    @JdbcTypeCode(SqlTypes.JSON)
+    private String atributos;
 }

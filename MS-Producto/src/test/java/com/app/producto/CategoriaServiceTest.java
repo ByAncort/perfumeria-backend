@@ -2,7 +2,7 @@ package com.app.producto;
 import com.app.producto.dto.CategoriaDto;
 import com.app.producto.domain.model.Categoria;
 import com.app.producto.repository.CategoriaRepository;
-import com.app.producto.service.CategoriaService;
+import com.app.producto.domain.service.CategoriaService;
 import org.app.dto.ServiceResult;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

@@ -1,4 +1,4 @@
-package com.app.producto.service;
+package com.app.producto.domain.service;
 
 
 import com.app.producto.dto.*;

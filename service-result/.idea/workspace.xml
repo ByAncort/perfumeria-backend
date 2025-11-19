@@ -5,32 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9924159c-bda5-4361-a9ea-a1984bb5e105" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../MS-Producto/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MS-Producto/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/Config/AuthClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/shared/client/AuthClientService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/Config/Dto/TokenResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/shared/security/TokenResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/Config/JwtAuthFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/config/web/JwtAuthFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/Config/OpenApiConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/config/OpenApiConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/Config/RestTemplateConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/config/RestTemplateConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/Config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/Controller/CategoriaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/controller/CategoriaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/Controller/ProductoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/controller/ProductoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/Dto/CategoriaDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/dto/CategoriaDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/Dto/ProductoBasicoDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/dto/ProductoBasicoDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/Dto/ProductoDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/dto/ProductoDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/Dto/ProveedorResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/dto/ProveedorResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/Models/Categoria.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/domain/model/Categoria.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/Models/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/domain/model/Producto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/Repository/CategoriaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/repository/CategoriaRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/Repository/ProductoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/repository/ProductoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/Service/CategoriaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/service/CategoriaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/Service/ProductoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/service/ProductoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/shared/MicroserviceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/shared/client/MicroserviceClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/shared/TokenContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/shared/security/TokenContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/shared/TokenFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/shared/security/TokenFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/dto/AtributosProducto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/shared/util/JsonAttributeHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MS-Authenticacion/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MS-Authenticacion/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../MS-Authenticacion/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/controller/CategoriaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/controller/CategoriaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/controller/ProductoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/controller/ProductoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/domain/model/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/domain/model/Producto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/dto/ProductoDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/dto/ProductoDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/service/CategoriaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/domain/service/CategoriaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/service/ProductoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MS-Producto/src/main/java/com/app/producto/domain/service/ProductoService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MS-Producto/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../MS-Producto/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MS-Producto/src/test/java/com/app/producto/CategoriaServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MS-Producto/src/test/java/com/app/producto/CategoriaServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MS-Producto/src/test/java/com/app/producto/ProductoServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MS-Producto/src/test/java/com/app/producto/ProductoServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MS-Proveedores/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../MS-Proveedores/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,29 +56,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Maven.service-result [clean,install].executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Eko/Documents/backend-sis/service-result&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/diego/Desktop/MICRO SERVICIOS/service-result/src/main/java/org/app/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.log&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven.service-result [clean,install].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Diego Cortes/Desktop/backend-perfumeria/service-result",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/diego/Desktop/MICRO SERVICIOS/service-result/src/main/java/org/app/Main.java",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "vcs.log",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn clean install" />
@@ -99,8 +87,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.23892.409" />
-        <option value="bundled-js-predefined-d6986cc7102b-e03c56caf84a-JavaScript-IU-252.23892.409" />
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.26927.53" />
+        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-IU-251.26927.53" />
       </set>
     </attachedChunks>
   </component>
@@ -116,6 +104,7 @@
       <workItem from="1750636593491" duration="2689000" />
       <workItem from="1763434700498" duration="743000" />
       <workItem from="1763435671005" duration="598000" />
+      <workItem from="1763557459031" duration="683000" />
     </task>
     <servers />
   </component>

@@ -1,5 +1,6 @@
-package com.app.producto.service;
+package com.app.producto.domain.service;
 
+import com.app.producto.dto.AtributosProducto;
 import com.app.producto.dto.ProductoDto;
 import com.app.producto.dto.ProveedorResponse;
 import com.app.producto.domain.model.Categoria;
@@ -8,6 +9,7 @@ import com.app.producto.repository.CategoriaRepository;
 import com.app.producto.repository.ProductoRepository;
 import com.app.producto.shared.client.MicroserviceClient;
 import com.app.producto.shared.security.TokenContext;
+import com.app.producto.shared.util.JsonAttributeHelper;
 import lombok.RequiredArgsConstructor;
 import org.app.dto.ServiceResult;
 import org.springframework.beans.factory.annotation.Value;
@@ -16,8 +18,10 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 import org.springframework.cache.annotation.Cacheable;
+
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 @Service
 @RequiredArgsConstructor
@@ -48,6 +52,7 @@ public class ProductoService {
 
         return response.getBody();
     }
+
     public ProveedorResponse fallbackProveedor(Long proveedorId, Throwable t) {
         System.out.println("Fallback ejecutado para proveedor " + proveedorId + " por error: " + t.getMessage());
         return null;
@@ -75,8 +80,6 @@ public class ProductoService {
                 return new ServiceResult<>(errors);
             }
 
-
-
             Producto producto = toEntity(dto);
             producto.setCategoria(categoria);
             productoRepository.save(producto);
@@ -87,6 +90,7 @@ public class ProductoService {
             return new ServiceResult<>(errors);
         }
     }
+
     public ServiceResult<List<ProductoDto>> listarProductos() {
         List<String> errors = new ArrayList<>();
         try {
@@ -100,6 +104,7 @@ public class ProductoService {
             return new ServiceResult<>(errors);
         }
     }
+
     public ServiceResult<ProductoDto> obtenerProducto(Long id) {
         List<String> errors = new ArrayList<>();
         try {
@@ -125,7 +130,6 @@ public class ProductoService {
                 return new ServiceResult<>(errors);
             }
 
-
             Categoria categoria = categoriaRepository.findById(dto.getCategoriaId())
                     .orElse(null);
             if (categoria == null) {
@@ -139,14 +143,15 @@ public class ProductoService {
                 return new ServiceResult<>(errors);
             }
 
+            // Actualizar atributos
+            String atributosJson = buildAtributosJson(dto);
+            producto.setAtributos(atributosJson);
 
-//            producto.setCodigoSku(dto.getCodigoSku());
             producto.setNombre(dto.getNombre());
             producto.setDescripcion(dto.getDescripcion());
             producto.setPrecio(dto.getPrecio());
             producto.setCosto(dto.getCosto());
             producto.setCatalogo(dto.getCatalogo());
-//            producto.setSerial(dto.getSerial());
             producto.setProveedoresId(prov.getId());
             producto.setCategoria(categoria);
 
@@ -158,6 +163,7 @@ public class ProductoService {
             return new ServiceResult<>(errors);
         }
     }
+
     public ServiceResult<Void> eliminarProducto(Long id) {
         List<String> errors = new ArrayList<>();
         try {
@@ -172,13 +178,17 @@ public class ProductoService {
         }
         return new ServiceResult<>(errors);
     }
+
     public Producto toEntity(ProductoDto dto) throws Exception {
         if (dto == null) return null;
-        ProveedorResponse prov=consultarProveedor(dto.getProveedorId());
-        //si exite dejalo pasar
+        ProveedorResponse prov = consultarProveedor(dto.getProveedorId());
         if (prov == null) {
             throw new Exception("Proveedor con ID " + dto.getProveedorId() + " no existe");
         }
+
+        // Construir JSON de atributos
+        String atributosJson = buildAtributosJson(dto);
+
         return Producto.builder()
                 .id(dto.getId())
                 .codigoSku(dto.getCodigoSku())
@@ -189,12 +199,14 @@ public class ProductoService {
                 .catalogo(dto.getCatalogo())
                 .serial(dto.getSerial())
                 .proveedoresId(dto.getProveedorId())
+                .atributos(atributosJson) // Agregar atributos
                 .build();
     }
+
     public ProductoDto toDto(Producto producto) {
         if (producto == null) return null;
 
-        return ProductoDto.builder()
+        ProductoDto.ProductoDtoBuilder builder = ProductoDto.builder()
                 .id(producto.getId())
                 .codigoSku(producto.getCodigoSku())
                 .nombre(producto.getNombre())
@@ -204,11 +216,59 @@ public class ProductoService {
                 .catalogo(producto.getCatalogo())
                 .serial(producto.getSerial())
                 .stock(producto.getStock())
-                .categoriaId(producto.getCategoria() != null ? producto.getCategoria().getId() : null)
-                .build();
+                .categoriaId(producto.getCategoria() != null ? producto.getCategoria().getId() : null);
+
+        // Si hay atributos, parsearlos y agregarlos al DTO
+        if (producto.getAtributos() != null && !producto.getAtributos().trim().isEmpty()) {
+            Map<String, Object> atributosMap = JsonAttributeHelper.jsonToMap(producto.getAtributos());
+            populateDtoFromAtributos(builder, atributosMap);
+        }
+
+        return builder.build();
     }
 
+    // Método auxiliar para construir JSON de atributos
+    private String buildAtributosJson(ProductoDto dto) {
+        try {
+            AtributosProducto atributos = AtributosProducto.builder()
+                    .tipo(dto.getTipo())
+                    .tallas(dto.getTallas())
+                    .colores(dto.getColores())
+                    .material(dto.getMaterial())
+                    .marca(dto.getMarca())
+                    .temporada(dto.getTemporada())
+                    .especificaciones(dto.getEspecificaciones())
+                    .build();
 
+            return JsonAttributeHelper.atributosToJson(atributos);
+        } catch (Exception e) {
+            // En caso de error, retornar JSON básico
+            return "{\"tipo\":\"" + dto.getTipo() + "\"}";
+        }
+    }
 
-
+    // Método auxiliar para poblar DTO desde atributos JSON
+    private void populateDtoFromAtributos(ProductoDto.ProductoDtoBuilder builder, Map<String, Object> atributosMap) {
+        if (atributosMap.containsKey("tipo")) {
+            builder.tipo((String) atributosMap.get("tipo"));
+        }
+        if (atributosMap.containsKey("tallas")) {
+            builder.tallas((List<String>) atributosMap.get("tallas"));
+        }
+        if (atributosMap.containsKey("colores")) {
+            builder.colores((List<String>) atributosMap.get("colores"));
+        }
+        if (atributosMap.containsKey("material")) {
+            builder.material((String) atributosMap.get("material"));
+        }
+        if (atributosMap.containsKey("marca")) {
+            builder.marca((String) atributosMap.get("marca"));
+        }
+        if (atributosMap.containsKey("temporada")) {
+            builder.temporada((String) atributosMap.get("temporada"));
+        }
+        if (atributosMap.containsKey("especificaciones")) {
+            builder.especificaciones((Map<String, String>) atributosMap.get("especificaciones"));
+        }
+    }
 }

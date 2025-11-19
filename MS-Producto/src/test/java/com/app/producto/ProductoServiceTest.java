@@ -6,7 +6,7 @@ import com.app.producto.domain.model.Categoria;
 import com.app.producto.domain.model.Producto;
 import com.app.producto.repository.CategoriaRepository;
 import com.app.producto.repository.ProductoRepository;
-import com.app.producto.service.ProductoService;
+import com.app.producto.domain.service.ProductoService;
 import com.app.producto.shared.client.MicroserviceClient;
 import com.app.producto.shared.security.TokenContext;
 import org.app.dto.ServiceResult;
