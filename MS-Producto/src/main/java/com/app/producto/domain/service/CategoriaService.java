@@ -26,6 +26,7 @@ public class CategoriaService {
             }
 
             Categoria categoria = Categoria.builder()
+
                     .nombre(dto.getNombre())
                     .descripcion(dto.getDescripcion())
                     .build();
@@ -44,6 +45,7 @@ public class CategoriaService {
 
             List<CategoriaDto> dtoList = categorias.stream()
                     .map(cat -> CategoriaDto.builder()
+                            .id(cat.getId())
                             .nombre(cat.getNombre())
                             .descripcion(cat.getDescripcion())
                             .build())

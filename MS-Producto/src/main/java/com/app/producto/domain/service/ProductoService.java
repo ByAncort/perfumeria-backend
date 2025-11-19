@@ -148,6 +148,8 @@ public class ProductoService {
             producto.setAtributos(atributosJson);
 
             producto.setNombre(dto.getNombre());
+            producto.setImagePrimary(dto.getImagePrimary());
+            producto.setImageSecondary(dto.getImageSecondary());
             producto.setDescripcion(dto.getDescripcion());
             producto.setPrecio(dto.getPrecio());
             producto.setCosto(dto.getCosto());
@@ -212,6 +214,8 @@ public class ProductoService {
                 .id(producto.getId())
                 .codigoSku(producto.getCodigoSku())
                 .nombre(producto.getNombre())
+                .imagePrimary(producto.getImagePrimary())
+                .imageSecondary(producto.getImageSecondary())
                 .descripcion(producto.getDescripcion())
                 .precio(producto.getPrecio())
                 .costo(producto.getCosto())
